@@ -59,6 +59,14 @@ def recognize_speech_from_mic(recognizer, microphone):
 
 #%%
 
+#interpret what the audio command is and return a command (string)
+def interpret_text(transcription):
+    pass
+
+#Based on command, look up appropriate key-binding in dictionary and simulate the key press
+def simulate_keypress(command):
+    pass
+
 if __name__ == "__main__":
     recognizer = sr.Recognizer()
     mic = sr.Microphone(device_index=1)
