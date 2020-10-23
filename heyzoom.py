@@ -66,7 +66,7 @@ def recognize_speech_from_mic(recognizer, microphone):
 
 #%%
 
-#interpret what the audio command is and return a command (string)
+#interpret what the audio command is and return a command
 def interpret_text(transcription):
     if commands[0] in transcription:
         simulate_keypress(0)
@@ -83,7 +83,7 @@ def interpret_text(transcription):
     else:
         return
 
-#Based on command, look up appropriate key-binding in dictionary and simulate the key press
+#Based on command, simulate the key press
 def simulate_keypress(command):
     keyboard = Controller()
     if command == 0:# and mic_status == 1:
