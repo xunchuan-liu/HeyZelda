@@ -9,7 +9,7 @@ import re
    -> Generic key is given by default (it may be revoked by Google at any time)
    -> If using API key, quota for your own key is 50 requests per day
 '''
-
+trigger = "Zelda"
 commands = {
     0: "turn off microphone",
     1: "turn on microphone",
@@ -68,18 +68,21 @@ def recognize_speech_from_mic(recognizer, microphone):
 
 #interpret what the audio command is and return a command
 def interpret_text(transcription):
-    if commands[0] in transcription:
-        simulate_keypress(0)
-        mic_status = 0
-    elif commands[1] in transcription:
-        simulate_keypress(1)
-        mic_status = 1
-    elif commands[2] in transcription:
-        simulate_keypress(2)
-        vid_status = 0
-    elif commands[3] in transcription:
-        simulate_keypress(3)
-        vid_status = 1
+    if trigger in transcription:
+        if commands[0] in transcription:
+            simulate_keypress(0)
+            mic_status = 0
+        elif commands[1] in transcription:
+            simulate_keypress(1)
+            mic_status = 1
+        elif commands[2] in transcription:
+            simulate_keypress(2)
+            vid_status = 0
+        elif commands[3] in transcription:
+            simulate_keypress(3)
+            vid_status = 1
+        else:
+            return
     else:
         return
 
