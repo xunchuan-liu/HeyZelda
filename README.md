@@ -13,3 +13,5 @@
 -pip install SpeechRecognition
 
 -pip install pynput
+
+-pip install pyperclip

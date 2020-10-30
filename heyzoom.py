@@ -1,5 +1,6 @@
 import speech_recognition as sr
 from keybindings import Keybinding
+from text_interpreter import TextInterpreter
 import re
 #%%
 '''
@@ -9,13 +10,6 @@ import re
    -> Generic key is given by default (it may be revoked by Google at any time)
    -> If using API key, quota for your own key is 50 requests per day
 '''
-trigger = "Zelda"
-commands = {
-    0: "turn off microphone",
-    1: "turn on microphone",
-    2: "turn off video",
-    3: "turn on video",
-}
 #%%
 
 def recognize_speech_from_mic(recognizer, microphone):
@@ -66,44 +60,6 @@ def recognize_speech_from_mic(recognizer, microphone):
 
 #%%
 
-#interpret what the audio command is and return a command
-def interpret_text(transcription):
-    if trigger in transcription:
-        if commands[0] in transcription:
-            simulate_keypress(0)
-            mic_status = 0
-        elif commands[1] in transcription:
-            simulate_keypress(1)
-            mic_status = 1
-        elif commands[2] in transcription:
-            simulate_keypress(2)
-            vid_status = 0
-        elif commands[3] in transcription:
-            simulate_keypress(3)
-            vid_status = 1
-        else:
-            return
-    else:
-        return
-
-#Based on command, simulate the key press
-def simulate_keypress(command):
-    keyboard = Keybinding()
-    if command == 0:# and mic_status == 1:
-        print("muting")
-        keyboard.enable_disable_mic()
-    if command == 1:# and mic_status == 0:
-        print("unmuting")
-        keyboard.enable_disable_mic()
-    elif command == 2:# and vid_status == 1:
-        keyboard.enable_disable_vid()
-        print("turning off video")
-    elif command == 3:# and vid_status == 0:
-        keyboard.enable_disable_vid()
-        print("turning on video")
-    else:
-        return
-
 if __name__ == "__main__":
     recognizer = sr.Recognizer()
     mic = sr.Microphone(device_index=1)
@@ -117,5 +73,6 @@ if __name__ == "__main__":
         if response['transcription'] == None:
             continue
         else:
-            interpret_text(response['transcription'].strip())
+            text_interpreter = TextInterpreter(response['transcription'].strip())
+            text_interpreter.interpret_text()
 # %%
