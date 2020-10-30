@@ -1,5 +1,5 @@
 import speech_recognition as sr
-from pynput.keyboard import Key, Controller
+from keybindings import Keybinding
 import re
 #%%
 '''
@@ -88,30 +88,18 @@ def interpret_text(transcription):
 
 #Based on command, simulate the key press
 def simulate_keypress(command):
-    keyboard = Controller()
+    keyboard = Keybinding()
     if command == 0:# and mic_status == 1:
         print("muting")
-        keyboard.press(Key.alt_l)
-        keyboard.press('a')
-        keyboard.release(Key.alt_l)
-        keyboard.release('a')
+        keyboard.enable_disable_mic()
     if command == 1:# and mic_status == 0:
         print("unmuting")
-        keyboard.press(Key.alt_l)
-        keyboard.press('a')
-        keyboard.release(Key.alt_l)
-        keyboard.release('a')
+        keyboard.enable_disable_mic()
     elif command == 2:# and vid_status == 1:
-        keyboard.press(Key.alt_l)
-        keyboard.press('v')
-        keyboard.release(Key.alt_l)
-        keyboard.release('v')
+        keyboard.enable_disable_vid()
         print("turning off video")
     elif command == 3:# and vid_status == 0:
-        keyboard.press(Key.alt_l)
-        keyboard.press('v')
-        keyboard.release(Key.alt_l)
-        keyboard.release('v')
+        keyboard.enable_disable_vid()
         print("turning on video")
     else:
         return
