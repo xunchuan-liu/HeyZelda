@@ -9,7 +9,7 @@
 
 > **Find your Python version using the command line:**
  
-`python -v`
+`python -V` (*notice capital **V***)
 
 You will need the version number, *i.e. 3.8.1*, for the next step. 
 
