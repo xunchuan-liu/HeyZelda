@@ -23,8 +23,8 @@ This file is necessary to make **`PyAudio`** work with audio inputs.
 2. Find the file that matches your python version number. \
 *To match the file with your version number, look at the numbers after the letters **cp** in the file name.* \
 *For instance:*
-    - *Python 3.7 ==> PyAudio-0.2.11-cp****37**-cp****37**-win_amd64l.whl* 
-    - *Python 3.5 ==> PyAudio-0.2.11-cp****35**-cp****35**-win_amd64l.whl*
+    - *Python 3.7 ==> PyAudio-0.2.11-cp**37**-cp**37**-win_amd64l.whl* 
+    - *Python 3.5 ==> PyAudio-0.2.11-cp**35**-cp**35**-win_amd64l.whl*
 3. Download the file to your local desktop. 
 
 &nbsp;
