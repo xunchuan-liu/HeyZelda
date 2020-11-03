@@ -7,7 +7,7 @@
 
 ## Installation and Setup
 
-> Find your Python version using the command line:
+> **Find your Python version using the command line:**
  
 `python -v`
 
@@ -15,7 +15,7 @@ You will need the version number, *i.e. 3.8.1*, for the next step.
 
 &nbsp;
 
-> Download the compatible `.whl` file. 
+> **Download the compatible `.whl` file.** 
 
 This file is necessary to make **`PyAudio`** work with audio inputs.
 
@@ -29,7 +29,7 @@ This file is necessary to make **`PyAudio`** work with audio inputs.
 
 &nbsp;
  
-> Install the `.whl` file.
+> **Install the `.whl` file.**
  
 Navigate to the folder with the downloaded file. Use your python package manager to install it. Example with `pip`:
 
@@ -37,13 +37,13 @@ Navigate to the folder with the downloaded file. Use your python package manager
 
 &nbsp;
 
-> Make a local copy of this repo to begin working: 
+> **Make a local copy of this repo to begin working:** 
 
 `git clone https://github.com/akeller98/HeyZoom`
 
 &nbsp;
 
-> Install the necessary modules from `requirements.txt`.
+> **Install the necessary modules from `requirements.txt`.**
 
 Navigate to the cloned repository. Run this command with your Python package manager, *i.e. with `pip`*:
 
