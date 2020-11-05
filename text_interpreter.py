@@ -41,40 +41,11 @@ class TextInterpreter:
     #interpret what the audio command is and return a command
     def interpret_text(self):
         if self.trigger in self.transcription:
-            if self.commands[0] in self.transcription:
-                self.simulate_keypress(0)
-                #mic_status = 0
-            elif self.commands[1] in self.transcription:
-                self.simulate_keypress(1)
-                #mic_status = 1
-            elif self.commands[2] in self.transcription:
-                self.simulate_keypress(2)
-                #vid_status = 0
-            elif self.commands[3] in self.transcription:
-                self.simulate_keypress(3)
-                #vid_status = 1
-            elif self.commands[4] in self.transcription:
-                self.simulate_keypress(4)
-            elif self.commands[5] in self.transcription:
-                self.simulate_keypress(5)
-            elif self.commands[6] in self.transcription:
-                self.simulate_keypress(6)
-            elif self.commands[7] in self.transcription:
-                self.simulate_keypress(7)
-            elif self.commands[8] in self.transcription:
-                self.simulate_keypress(8)
-            elif self.commands[9] in self.transcription:
-                self.simulate_keypress(9)
-            elif self.commands[10] in self.transcription:
-                self.simulate_keypress(10)
-            elif self.commands[11] in self.transcription:
-                self.simulate_keypress(11)
-            elif self.commands[12] in self.transcription:
-                self.simulate_keypress(12)
-            elif self.commands[13] in self.transcription:
-                self.simulate_keypress(13)
-            else:
-                return
+            selected_command = ''
+            for command in self.commands:
+                if self.commands[command] in self.transcription:
+                    selected_command = command
+                    self.simulate_keypress(selected_command)
         else:
             return
 
