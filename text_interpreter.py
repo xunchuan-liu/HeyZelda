@@ -1,4 +1,4 @@
-from keybindings import Keybinding
+from win_keybindings import Keybinding
 
 class TextInterpreter:
     def __init__(self, transcription):
