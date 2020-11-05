@@ -1,5 +1,4 @@
 import speech_recognition as sr
-from keybindings import Keybinding
 from text_interpreter import TextInterpreter
 import re
 #%%
