@@ -1,0 +1,57 @@
+Command(⌘)+W: close window
+Command(⌘)+L: switch to portrait view
+Command(⌘)+L: switch to landscape view
+Ctrl+T: switch tab
+
+Command(⌘)+J: join meeting
+Command(⌘)+Control+V: start meeting
+Command(⌘)+J: schedule meeting
+Command(⌘)+Control+S: screen share using direct share
+Command(⌘)+Shift+A: turn on microphone
+Command(⌘)+Shift+A: turn off microphone
+Command(⌘)+Control+M: mute everyone
+Command(⌘)+Control+U: unmute everyone
+Command(⌘)+Shift+V: turn on video
+Command(⌘)+Shift+V: turn off video
+Command(⌘)+Shift+N: switch camera
+Command(⌘)+Shift+S: start screen share
+Command(⌘)+Shift+S: stop screen share
+Command(⌘)+Shift+T: pause screen share
+Command(⌘)+Shift+T: resume screen share
+Command(⌘)+Shift+R: start local recording
+Command(⌘)+Shift+C: start cloud recording
+Command(⌘)+Shift+P: pause recording
+Command(⌘)+Shift+P: resume recording
+Command(⌘)+Shift+W: Switch to active speaker view
+Command(⌘)+Shift+W: Switch to gallery view
+Ctrl+P: View previous participants
+Ctrl+N: View next participants
+Command(⌘)+U: display participants panel
+Command(⌘)+U: hide participants panel
+Command(⌘)+Shift+H: show in-meeting chat panel
+Command(⌘)+Shift+H: hide in-meeting chat panel
+Command(⌘)+I: open invite window
+Option+Y: raise hand
+Option+Y: lower hand
+Ctrl+Shift+R: gain remote control
+Ctrl+Shift+G: stop remote control
+Command(⌘)+Shift+F: enter full screen
+Command(⌘)+Shift+F: exit full screen
+Command(⌘)+Shift+M: switch to minimal window
+Ctrl+Option+Command+H: show meeting controls
+Ctrl+Option+Command+H: hide meeting controls
+Ctrl+\: toggle meeting controls option
+Command(⌘)+W: end meeting
+Command(⌘)+W: leave meeting
+
+Command(⌘)+K: jump to chat 
+Command(⌘)+T: screenshot
+
+Ctrl+Shift+C: call highlighted phone number
+Ctrl+Shift+A: accept inbound call
+Ctrl+Shift+D: decline inbound call
+Ctrl+Shift+E: End current call
+Ctrl+Shift+M: mute mic
+Ctrl+Shift+M: unmute mic
+Ctrl+Shift+H: hold call
+Ctrl+Shift+H: unhold call
