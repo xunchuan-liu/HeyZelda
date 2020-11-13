@@ -16,7 +16,7 @@ class TextInterpreter:
             7: "raise hand",
             8: "lower hand",
             9: "start local recording",
-            10: "stop_local_recording",
+            10: "stop local recording",
             11: "share screen",
             12: "stop screen sharing",
             13: "read speaker name",
