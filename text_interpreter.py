@@ -37,7 +37,7 @@ class TextInterpreter:
             11: self.keyboard.share_stop_screen,
             12: self.keyboard.share_stop_screen,
             13: self.keyboard.read_speaker_name,
-            14: self.keypress.switch_camera
+            14: self.keyboard.switch_camera
         }
     
     #interpret what the audio command is and return a command
