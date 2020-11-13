@@ -19,7 +19,8 @@ class TextInterpreter:
             10: "stop_local_recording",
             11: "share screen",
             12: "stop screen sharing",
-            13: "read speaker name"
+            13: "read speaker name",
+            14: "switch camera"
         }
         self.keypress_switch = {
             0: self.keyboard.enable_disable_mic,
@@ -35,7 +36,8 @@ class TextInterpreter:
             10: self.keyboard.start_stop_local_recording,
             11: self.keyboard.share_stop_screen,
             12: self.keyboard.share_stop_screen,
-            13: self.keyboard.read_speaker_name
+            13: self.keyboard.read_speaker_name,
+            14: self.keypress.switch_camera
         }
     
     #interpret what the audio command is and return a command

@@ -70,3 +70,9 @@ class Keybinding:
         self.keyboard.press('2')
         self.keyboard.release(Key.ctrl)
         self.keyboard.release('2')
+
+    def switch_camera(self):
+        self.keyboard.press(Key.alt_l)
+        self.keyboard.press('n')
+        self.keyboard.release(Key.alt_l)
+        self.keyboard.release('n')
