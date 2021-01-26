@@ -111,7 +111,7 @@ You will see an output like this:
 ![Demo of speech recognition](/img/demo.jpg)
 
 ### With Zoom
-You can now start a Zoom meeting and have this program running in the background. You can beginning issuing commands to control the meeting. 
+You can now start a Zoom meeting and have this program running in the background. You can begin issuing commands to control the meeting. 
 
 For instance, try:
 - **Zelda turn off microphone**
