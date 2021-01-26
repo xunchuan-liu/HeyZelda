@@ -1,4 +1,4 @@
-# HeyZoom
+# HeyZelda
 
 ### *Introducing your personal Zoom meeting assistant:*
 
@@ -74,7 +74,7 @@ Navigate to the folder with the downloaded file. With the command line, use your
 
 > **Make a local copy of this repo to begin working:** 
 
-`git clone https://github.com/xunchuan-liu/HeyZoom`
+`git clone https://github.com/xunchuan-liu/HeyZelda`
 
 &nbsp;
 
