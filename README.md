@@ -6,7 +6,7 @@
 
 A program for users to control Zoom meeting functionality with their voice. 
 
-CS 338 Final Project
+CS 338 Final Project - **Speech Based Control of Zoom**
 
 > #### Project Theme
 > Improving popular remote collaboration tools to facilitate virtual teamwork during the Coronavirus pandemic.
